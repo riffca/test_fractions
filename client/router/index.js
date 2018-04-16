@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../views/Home'
 
-import Calc from '../views/Calc'
-import Comments from '../views/comments'
+
+const Calc =  () => import('../views/Calc')
+const Comments = () => import('../views/comments')
 
 Vue.use(Router)
 
