@@ -43,7 +43,7 @@
 
 import math from 'mathjs'
 let Fraction = require('fractional').Fraction
-//'fractional' простая билеотека для работы с дробями в js
+//'fractional' удобная билеотека для работы с дробями в js
 export default {
   computed:{
     nanResult(){
