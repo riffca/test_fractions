@@ -42,7 +42,8 @@
 <script>
 
 import math from 'mathjs'
-let Fraction = require('fractional').Fraction
+import fractional from 'fractional';
+let Fraction = fractional.Fraction
 //'fractional' удобная билеотека для работы с дробями в js
 export default {
   computed:{
@@ -69,15 +70,7 @@ export default {
         }
       })
       return result
-    },
-    htmlFractions(){
-      return this.fractions.map(item=>`
-        <span>${item.point}</span>
-        <span>${item.numerator}</span>
-        <span>${item.denominator}</span>
-        `
-      )
-    },
+    }
   },
   updated(){
     this.fractions.forEach(item=>{
@@ -87,7 +80,7 @@ export default {
   methods:{
     addFraction(){
       function randomInteger(min, max) {
-        var rand = min - 0.5 + Math.random() * (max - min + 1)
+        let rand = min - 0.5 + Math.random() * (max - min + 1)
         rand = Math.round(rand);
         return rand;
       }
