@@ -42,8 +42,8 @@
 <script>
 
 import math from 'mathjs'
-import fractional from 'fractional';
-let Fraction = fractional.Fraction
+import { Fraction } from 'fractional';
+//let Fraction = fractional.Fraction
 //'fractional' удобная билеотека для работы с дробями в js
 export default {
   computed:{
